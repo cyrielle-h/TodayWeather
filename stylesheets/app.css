@@ -1,4 +1,41 @@
-.weather-icon {
-	color: orange;
-	font-size: 20px;
+.CurrentLocation {
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
 }
+
+.info-today {
+	padding: 20px;
+	width: 100%;
+	height: 60%;
+	background-image: url("sunny.jpg");
+	text-transform: uppercase;
+	background-size: 1150px;
+	color: white;
+	line-height: 0.5;
+}
+
+.TemperatureToday {
+	float: right;
+	font-size: 60px;
+	margin-top: 15%;
+}
+
+.Table-Day-Selected {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	line-height: 2;
+}
+
+.Table-Forecast-All-Days  {
+	width: 100%;
+	text-align: center;
+	line-height: 2;
+}
+
+.Table-Day-Selected {
+	padding: 20px;
+	border-bottom: 1px solid blue;
+}
+
