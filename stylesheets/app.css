@@ -5,20 +5,32 @@
 }
 
 .info-today {
-	padding: 20px;
+	background-image: url("sunny.jpg");
 	width: 100%;
 	height: 60%;
-	background-image: url("sunny.jpg");
-	text-transform: uppercase;
 	background-size: 1150px;
+	position: relative;
 	color: white;
+}
+
+.time-date-city {
+	padding: 20px;
+	text-transform: uppercase;
 	line-height: 0.5;
 }
 
-.TemperatureToday {
-	float: right;
-	font-size: 60px;
-	margin-top: 15%;
+.precipitation-humidity-wind {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	line-height: 0.5;
+}
+
+.temperature-now {
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	font-size: 100px;
 }
 
 .Table-Day-Selected {
