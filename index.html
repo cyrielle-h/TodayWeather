@@ -1,4 +1,4 @@
-<html>
+ <html>
     <head>
     	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -8,227 +8,239 @@
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
         <link rel="stylesheet" href="stylesheets/app.css">
         <script src="js/app.js"></script>
     </head>
+
     <body>
+<!-- FIRST NAVABAR -->
 
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="CurrentLocation">
-                <i class="fas fa-location-arrow weather-icon"></i>
-            </button>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Enter location" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            </div>
-            <div class="option">
-                <div class="selectric-hide-select">
-                    <select class="units" tabindex="-1">
-                      <option value="us">˚F</option>
-                      <option value="si">˚C</option>
-                    </select>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">TodayWeather</a>
                 </div>
             </div>
         </nav>
-        <br>
-        <div class="info-today">
-            <div class="time-date-city">
-                <p>13:28 PM</p>
-                <p>tuesday, 24 october 2018</p>
-                <p>Lisbon</p>
+
+        <!-- SECOND NAVBAR -->
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <button class="CurrentLocation">
+                    <i class="fas fa-location-arrow icon"></i>
+                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Enter location" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <button class="Refresh">
+                    <i class="fas fa-redo-alt"></i>
+                </button>
+                </div>
+                <div class="option">
+                    <div class="selectric-hide-select">
+                        <select class="units" tabindex="-1">
+                          <option value="us">˚F</option>
+                          <option value="si">˚C</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+
+        <!-- Info Today and illustration -->   
+
+        <div class="container info-today">
+            <div class="row">
+                <div class="col col-md-6">
+                    <p class="temperature-now">16°C</p>
+                    <p class="date-DescriptionWeather-city">Nov 10, Mostly Cloudy in Lisbon</p>
+                </div>
+                <div class="col col-md-6">
+                    <img class="illustration" src="undraw_autumn_2_ygk5.svg" width="300">
+                </div>
             </div>
-            <div class="precipitation-humidity-wind">
-                <p>Precipitation 0%</p>
-                <p>Humidity 2%</p>
-                <p>Wind 18km/h</p>
+        </div>
+
+        <!-- DETAIL-->
+
+        <div class="details">
+            <p class="subtitle">detail</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="detail-box1">
+                                <div class="content">
+                                    <i class="fas fa-tint detail-icon"></i>
+                                    <p class="detail-title">Humidity</p>
+                                    <p class="detail-result">55%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="detail-box2">
+                                <div class="content">
+                                    <i class="fas fa-sun detail-icon"></i>
+                                    <p class="detail-title">UV Index</p>
+                                    <p class="detail-result">5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="detail-box3">
+                                <div class="content">
+                                    <i class="fas fa-tachometer-alt detail-icon"></i>
+                                    <p class="detail-title">Pressure</p>
+                                    <p class="detail-result">1008.8 mb</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="detail-box4">
+                                <div class="content">
+                                    <i class="fas fa-wind detail-icon"></i>
+                                    <p class="detail-title">Wind</p>
+                                    <p class="detail-result">120km/h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
             </div>
-            <div class="temperature-now">
-                <p>19°C</p>
+        </div>
+
+
+        <!-- NEXT 24 HOURS-->
+
+        <div class="next-24-hours">
+            <p class="subtitle">next 24 hours</p>
+            <div class="row">
+                <div class="col-md-1">
+                    <p class="temperature-hour">24°C</p>
+                    <img class="weather-icon" src="Cloud.svg">
+                    <p class="hour">15:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">25°C</p>
+                    <img class="weather-icon" src="Cloud.svg">
+                    <p class="hour">16:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">22°C</p>
+                    <img class="weather-icon" src="Rain.svg">
+                    <p class="hour">17:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">22°C</p>
+                    <img class="weather-icon" src="Cloud.svg">
+                    <p class="hour">18:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">21°C</p>
+                    <img class="weather-icon" src="Rain.svg">
+                    <p class="hour">19:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">20°C</p>
+                    <img class="weather-icon" src="Sun.svg">
+                    <p class="hour">20:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">20°C</p>
+                    <img class="weather-icon" src="Sun.svg">
+                    <p class="hour">21:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">18°C</p>
+                    <img class="weather-icon" src="Cloud.svg">
+                    <p class="hour">22:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">16°C</p>
+                    <img class="weather-icon" src="Rain.svg">
+                    <p class="hour">23:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">16°C</p>
+                    <img class="weather-icon" src="Rain.svg">
+                    <p class="hour">00:00</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-hour">15°C</p>
+                    <img class="weather-icon" src="Cloud.svg">
+                    <p class="hour">01:00</p>
+                </div>
+                <div class="col-md-1">
+                    <i class="fas fa-angle-right fa-5x"></i>
+                </div>    
             </div>
         </div>
 
+        <!-- NEXT 7 DAYS-->
 
- <!-- ---------- END Table-Day-Selected ----------->
-
-
-
-        <div class="Forecast-Day-Selected"> 
-            <table class="Table-Day-Selected">
-                <tr class="Days">
-                    <td>
-                        12
-                    </td>
-                    <td>
-                        13
-                    </td>
-                    <td>
-                        14
-                    </td>
-                    <td>
-                        15
-                    </td>
-                    <td>
-                        16
-                    </td>
-                    <td>
-                        17
-                    </td>
-                    <td>
-                        18
-                    </td>
-                    <td>
-                        19
-                    </td>
-                    <td>
-                        20
-                    </td>
-                    <td>
-                        21
-                    </td>
-                </tr>
-                <tr class="weather-icon">
-                    <td>
-                        <i class="fas fa-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-wind"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud-moon"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud-moon"></i>
-                    </td>
-                </tr>
-                <tr class="TemperatureEveryDay">
-                    <td>19</td>
-                    <td>20</td>
-                    <td>20</td>
-                    <td>19</td>
-                    <td>18</td>
-                    <td>18</td>
-                    <td>17</td>
-                    <td>17</td>
-                    <td>16</td>
-                    <td>16</td>
-                </tr>
-            </table> 
+        <div class="next-24-hours">
+            <p class="subtitle">next 7 days</p>
+            <div class="row">
+                <div class="col-md-1">
+                    <p class="temperature-nextdays" id="max">21°C</p>
+                    <div class="thermometer"></div>
+                    <p class="temperature-nextdays" id="min">16°C</p>
+                    <img class="weather-icon" src="Rain.svg">
+                    <p class="hour">Mon</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-nextdays" id="max">22°C</p>
+                    <div class="thermometer"></div>
+                    <p class="temperature-nextdays" id="min">17°C</p>
+                    <img class="weather-icon" src="Rain.svg">
+                    <p class="hour">Tue</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-nextdays" id="max">20°C</p>
+                    <div class="thermometer"></div>
+                    <p class="temperature-nextdays" id="min">14°C</p>
+                    <img class="weather-icon" src="Cloud.svg">
+                    <p class="hour">Wed</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-nextdays" id="max">19°C</p>
+                    <div class="thermometer"></div>
+                    <p class="temperature-nextdays" min">12°C</p>
+                    <img class="weather-icon" src="Sun.svg">
+                    <p class="hour">Thu</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-nextdays" id="max">20°C</p>
+                    <div class="thermometer"></div>
+                    <p class="temperature-nextdays" id="min">14°C</p>
+                    <img class="weather-icon" src="Sun.svg">
+                    <p class="hour">Fri</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-nextdays" id="max">19°C</p>
+                    <div class="thermometer"></div>
+                    <p class="temperature-nextdays" id="min">14°C</p>
+                    <img class="weather-icon" src="Cloud.svg">
+                    <p class="hour">Sat</p>
+                </div>
+                <div class="col-md-1">
+                    <p class="temperature-nextdays" id="max">19°C</p>
+                    <div class="thermometer"></div>
+                    <p class="temperature-nextdays" id="min">13°C</p>
+                    <img class="weather-icon" src="Rain.svg">
+                    <p class="hour">Sun</p>
+                </div>
+            </div>
         </div>
 
-        <div class="Forecast-All-Days">
-            <table class="Table-Forecast-All-Days"> 
-                <tr class="days">
-                    <td class="today">
-                        Today
-                    </td>
-                    <td>
-                        Tuesday
-                    </td>
-                    <td>
-                        Wednesday
-                    </td>
-                    <td>
-                        Thursday
-                    </td>
-                    <td>
-                        Friday
-                    </td>
-                    <td>
-                        Saturday
-                    </td>
-                    <td>
-                        Sunday
-                    </td>
-                </tr>
-                    
-                <tr class="weather-icon">
-                    <td>
-                        <i class="fas fa-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-cloud"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-sun"></i>
-                    </td>
-                    <td>
-                        <i class="fas fa-wind"></i>
-                    </td>
-                </tr>
-                <tr class="TemperatureEveryDay">
-                    <td>23</td>
-                    <td>21</td>
-                    <td>20</td>
-                    <td>18</td>
-                    <td>19</td>
-                    <td>22</td>
-                    <td>20</td>
-                </tr>
-            </table>
+        <!-- Closing container -->        
         </div>
-
-
-    	
-    		<!-- <div class="row">
-    			<div class="col-md-5">
-    				Today
-    					<div class="row">
-	    					<div class="offset-md-4 col-md-4">
-	    						Temperature
-	    					</div>
-	    					<div class="col-md-2">
-	    						Wind
-	    					</div>
-	    					<div class="col-md-2">
-	    						Precipitation
-	    					</div>
-	    				</div>
-    			</div>
-    			<div class="col-md-2">
-    				Tomorrow
-    			</div>
-    			<div class="col-md-2">
-    				Saturay
-    			</div>
-    			<div class="col-md-2">
-    				Sunday
-    			</div>
-    		 </div> -->
-        </div>
-
     </body>
 </html>
