@@ -12,49 +12,52 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
         <link rel="stylesheet" href="stylesheets/app.css">
-
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     </head>
 
     <body>
-<!-- FIRST NAVABAR -->
+
+<!-- NAVABAR -->
 
     <nav class="navbar sticky-top navbar-expand-sm navbar-light" style="background-color: #5B00CC;">
         <a class="navbar-brand" href="#">TodayWeather</a>
-        <form class="form-inline">
-            <button class="btn btn-sm btn-outline-secondary" type="button">
-                <i class="fas fa-location-arrow currentLocation"></i>
+        <button class="btn btn-sm currentLocation-btn" type="button">
+                <i class="fas fa-location-arrow currentLocation-icon"></i>
             </button>
-            <input class="form-control mr-sm-2 searchLocation" type="search" placeholder="Enter location" aria-label="Search">
+        <form class="form-search">
+            <input class="form-control mr-sm-2 searchLocation" type="search" placeholder="Enter location" aria-label="Search" width="400px">
         </form>
-        <div class="option">
+        <!-- <div class="option">
             <div class="selectric-hide-select">
                 <select class="units" tabindex="-1">
                     <option value="us">˚F</option>
                     <option value="si">˚C</option>
                 </select>
             </div>
-        </div>
+        </div> -->
     </nav>
 
-<!-- Info Today and illustration -->   
+<!-- INFO TODAY -->   
+
         <div class="container">
             <div class="weather-summary">
                 <div class="row">
 
 <!-- PARTIE GAUCHE -->                    
                     <div class="col col-md-4">
-                        <div class="temperature-now">20
-                            <div class="weather-unit">
-                            °C
-                            </div>
+                        <div class="temperature-now">
+
+                        </div>
+                        <div class="weather-unit">
+                        °C
                         </div>
                         <div class="weather-summary__text">         
                             <div class="date">Nov 10,
                             </div>
                             <div class="weather-description">Mostly Cloudy
                             </div>
-                            <div class="city">in Lisbon
+                            <div class="city">
                             </div>
                         </div> 
                     </div>
@@ -66,8 +69,8 @@
                                         <div class="detail-box detail-box__humidity">
                                             <div class="detail-box__content">
                                                 <i class="fas fa-tint detail-icon"></i>
-                                                <p class="detail-title">Humidity</p>
-                                                <p class="detail-result">55%</p>
+                                                <p class="detail-title detail-title__Humidity">Humidity</p>
+                                                <p class="detail-result__Humidity">55%</p>
                                             </div>
                                         </div>
                                     </div>
@@ -75,8 +78,8 @@
                                         <div class="detail-box detail-box__uvIndex">
                                             <div class="detail-box__content">
                                                 <i class="fas fa-sun detail-icon"></i>
-                                                <p class="detail-title">UV Index</p>
-                                                <p class="detail-result">5</p>
+                                                <p class="detail-title detail-title__uvIndex">UV Index</p>
+                                                <p class="detail-result__uvIndex">5</p>
                                             </div>
                                         </div>
                                     </div>
@@ -84,8 +87,8 @@
                                         <div class="detail-box detail-box__pressure">
                                             <div class="detail-box__content">
                                                 <i class="fas fa-tachometer-alt detail-icon"></i>
-                                                <p class="detail-title">Pressure</p>
-                                                <p class="detail-result">1008.8 mb</p>
+                                                <p class="detail-title detail-title__pressure">Pressure</p>
+                                                <p class="detail-result__pressure">1008.8 mb</p>
                                             </div>
                                         </div>
                                     </div>
@@ -93,8 +96,8 @@
                                         <div class="detail-box detail-box__wind">
                                             <div class="detail-box__content">
                                                 <i class="fas fa-wind detail-icon"></i>
-                                                <p class="detail-title">Wind</p>
-                                                <p class="detail-result">120km/h</p>
+                                                <p class="detail-title detail-title__wind">Wind</p>
+                                                <p class="detail-result__wind">120km/h</p>
                                             </div>
                                         </div>
                                     </div>
